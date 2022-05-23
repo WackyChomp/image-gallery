@@ -39,7 +39,7 @@
 #
 
 ## Tasks / Goal Posts
-- [] 
+- [] Download image locally to computer
 - [] 
 - [] 
 - [] 
