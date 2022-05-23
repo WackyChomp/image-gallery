@@ -39,9 +39,16 @@
 #
 
 ## Tasks / Goal Posts
+- [] Search Bar
+- [] Display gallery in grid layout
+- [] Search bar grabs from Pexel API
 - [] Download image locally to computer
 - [] 
 - [] 
+
+### Optional / Wishlist
+- [] Download image to email
+- [] Text editor
 - [] 
 
 #

@@ -1,0 +1,69 @@
+
+/* ----------------- Reset Styling ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;      /* prevents overflow horizontally */
+}
+
+
+/* ----------------- Search Bar ----------------- */
+.search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid crimson;
+    z-index: 1;
+    background: lightblue;          /* gray / light */
+}
+
+input{
+    padding: 0.3rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.searchButton{
+    padding: 0.5rem 2rem;          /* vertical and horizontal */
+    margin-left: 1.5rem;
+    background: lightcoral;
+    color: black;
+    text-align: center;
+}
+
+
+/* ----------------- Loading more images ----------------- */
+
+.loadMore{
+    position: fixed;
+    top: 90%;           /* moves down from top of screen */
+    right: 2%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ----------------- Gallery ----------------- */
+.gallery{
+    width: 90%;
+    margin: 12vh 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-columns: repeat(4, 300px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
