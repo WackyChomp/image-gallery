@@ -62,8 +62,41 @@ input{
     margin: 12vh 50%;
     transform: translateX(-50%);
     display: grid;
-    grid-auto-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 300px);
     row-gap: 10px;
     column-gap: 10px;
     justify-content: center;
+}
+
+.gallery div{
+    position: relative;
+
+}
+
+img{
+    margin-left: 6px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+p{
+    position: absolute;
+    margin-left: 6px;
+    bottom: 5px;
+    background-color: black;
+    color:cadetblue;
+}
+
+a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: underline;
+    color: purple;
+    background-color: rgb(11, 237, 245);
+    margin-left: 6px;
+    font-weight: bold;
 }

@@ -15,7 +15,7 @@ input.addEventListener("input", (e)=>{
 
 // Starting images after loading
 async function curatedPhotos(pageNum){
-    const data = await fetch(`https://api.pexels.com/v1/curated?per_page=1&page=${pageNum}`, {
+    const data = await fetch(`https://api.pexels.com/v1/curated?per_page=15&page=${pageNum}`, {
         method: "GET",
         headers: {
             Accept: "application/json",
