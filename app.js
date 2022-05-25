@@ -32,7 +32,7 @@ async function curatedPhotos(pageNum){
         const pic = document.createElement("div");
         pic.innerHTML = `<img src=${photo.src.large}>
         <p>Photo : ${photo.photographer}</p>
-        <a href= ${photo.src.large}>Download<a/>
+        <a target="_blank" href=${photo.src.large}>Download<a/>
         
         `;
         document.querySelector(".gallery").appendChild(pic);
@@ -57,7 +57,7 @@ async function searchPhotos(query, pageNum){
         const pic = document.createElement("div");
         pic.innerHTML = `<img src=${photo.src.large}>
         <p>Photo : ${photo.photographer}</p>
-        <a href= ${photo.src.large}>Download<a/>
+        <a target="_blank" href=${photo.src.large}>Download<a/>
         `;
         document.querySelector(".gallery").appendChild(pic);
     });
@@ -71,6 +71,25 @@ searchButton.addEventListener("click", ()=>{
     searchPhotos(query, pageNum);
 });
 
+// Clearing
+function clear(){
+    input.value = "";
+    document.querySelector(".gallery").innerHTML = "";
+    pageNum = 1;
+}
 
+
+// Loading more images button
+loadMore.addEventListener("click", ()=> {
+    if (!search){
+        pageNum++;
+        curatedPhotos(pageNum)
+    }
+    else{
+        if (query.value === "") return;
+        pageNum++;
+        searchPhotos(query, pageNum);
+    }
+});
 
 curatedPhotos(pageNum);

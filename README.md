@@ -2,7 +2,7 @@
 
 
 ## Description
-<p>Fetching images through Pexel API
+<p>Fetching images through Pexel API and display as a gallery
 </p>
 
 #
@@ -28,28 +28,22 @@
 ** 
 
 ** 
-
-** 
-
-** 
-
-** 
 ```
 
 #
 
 ## Tasks / Goal Posts
-- [] Search Bar
-- [] Display gallery in grid layout
-- [] Search bar grabs from Pexel API
-- [] Download image locally to computer
+- [X] Search bar finds images based on query
+- [X] Display gallery in grid layout
+- [X] Search bar grabs from Pexel API
+- [] 
 - [] 
 - [] 
 
 ### Optional / Wishlist
 - [] Download image to email
 - [] Text editor
-- [] 
+- [] Download image locally to computer
 
 #
 
