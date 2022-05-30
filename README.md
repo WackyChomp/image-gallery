@@ -24,7 +24,7 @@
 ```
 ** git clone <insert_repo>
 
-** 
+** Live Server VSCode extension
 
 ** 
 
@@ -37,9 +37,6 @@
 - [X] Search bar finds images based on query
 - [X] Display gallery in grid layout
 - [X] Search bar grabs from Pexel API
-- [] 
-- [] 
-- [] 
 
 ### Optional / Wishlist
 - [] Download image to email

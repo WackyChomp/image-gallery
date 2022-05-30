@@ -9,6 +9,22 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;      /* prevents overflow horizontally */
+    background-color: azure;
+}
+
+
+/* Global Styling */
+
+.container{
+    max-width: 30%;
+    padding: 30px 15px;
+    margin: 2rem auto;                 /* centers contents */
+    border: 2px solid crimson;
+    background-color: lightblue;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
@@ -105,4 +121,25 @@ a{
     background-color: rgb(11, 237, 245);
     margin-left: 6px;
     font-weight: bold;
+}
+
+
+/* Footer Section */
+
+#footer .copyrights p{
+    position: relative;
+    background-color: lightcoral;
+    color:black;
+}
+
+#footer .container .copyrights a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 114, 99);
+    background-color: lightcoral;
+}
+
+#footer .copyrights{
+    padding: 10px;
+    border-top: 2px solid crimson;
 }
