@@ -12,6 +12,7 @@
 ## Requirements
 ```
 - HTML/CSS files
+- JavaScript file
 - Pexel API key
 - 
 - 
@@ -44,6 +45,8 @@
 - [] Download image to email
 - [] Text editor
 - [] Download image locally to computer
+- [] Save multiple images to PDF
+- [] Invert colors with button (Night/Day switch)
 
 #
 

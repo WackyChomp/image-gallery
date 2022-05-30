@@ -59,13 +59,16 @@ input{
 
 /* ----------------- Gallery ----------------- */
 .gallery{
-    width: 90%;
+    /* adjust 'width' and 'grid-template-columns' to 
+    determine how much to display per row */
+    width: 80%;
     margin: 12vh 50%;
     transform: translateX(-50%);
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    row-gap: 10px;
-    column-gap: 10px;
+    /* grid-template-columns: repeat(4, 230px); */
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    row-gap: 30px;
+    column-gap: 5px;
     justify-content: center;
 }
 
@@ -75,9 +78,11 @@ input{
 }
 
 img{
+    /* adjust 'height' and 'width' according to
+     'grid-template-columns' of class gallery*/
     margin-left: 6px;
-    height: 300px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
