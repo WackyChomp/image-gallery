@@ -47,9 +47,20 @@
 
 #
 
-## Title
-![description goes here](./)
+## Default Page
+![default page](./img/default-screen.PNG)
 
-## Title
-![description goes here](./)
+## Sample Search
+![Searched "penguins"](./img/sample-search-1.PNG)
+- Searched "penguins"
+
+<br>
+
+![Clicked load once](./img/sample-search-2.PNG)
+- click load x1
+
+<br>
+
+![Clicked load twice](./img/sample-search-3.PNG)
+- click load x2
 
