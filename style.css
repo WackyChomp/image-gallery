@@ -1,0 +1,145 @@
+
+/* ----------------- Reset Styling ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;      /* prevents overflow horizontally */
+    background-color: azure;
+}
+
+
+/* Global Styling */
+
+.container{
+    max-width: 30%;
+    padding: 30px 15px;
+    margin: 2rem auto;                 /* centers contents */
+    border: 2px solid crimson;
+    background-color: lightblue;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* ----------------- Search Bar ----------------- */
+.search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid crimson;
+    z-index: 1;
+    background: lightblue;          /* gray / light */
+}
+
+input{
+    padding: 0.3rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.searchButton{
+    padding: 0.5rem 2rem;          /* vertical and horizontal */
+    margin-left: 1.5rem;
+    background: lightcoral;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ----------------- Loading more images ----------------- */
+
+.loadMore{
+    position: fixed;
+    top: 90%;           /* moves down from top of screen */
+    right: 2%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ----------------- Gallery ----------------- */
+.gallery{
+    /* adjust 'width' and 'grid-template-columns' to 
+    determine how much to display per row */
+    width: 80%;
+    margin: 12vh 50%;
+    transform: translateX(-50%);
+    display: grid;
+    /* grid-template-columns: repeat(4, 230px); */
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    row-gap: 30px;
+    column-gap: 5px;
+    justify-content: center;
+}
+
+.gallery div{
+    position: relative;
+
+}
+
+img{
+    /* adjust 'height' and 'width' according to
+     'grid-template-columns' of class gallery*/
+    margin-left: 6px;
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+p{
+    position: absolute;
+    margin-left: 6px;
+    bottom: 5px;
+    background-color: black;
+    color:cadetblue;
+}
+
+a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: underline;
+    color: purple;
+    background-color: rgb(11, 237, 245);
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+
+/* Footer Section */
+
+#footer .copyrights p{
+    position: relative;
+    background-color: lightcoral;
+    color:black;
+}
+
+#footer .container .copyrights a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 114, 99);
+    background-color: lightcoral;
+}
+
+#footer .copyrights{
+    padding: 10px;
+    border-top: 2px solid crimson;
+}
